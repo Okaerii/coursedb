@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
   <!--UTF8声明-->
@@ -65,23 +66,27 @@
               <th>
                 教室
               </th>
+              <th>选课</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-              <td>
-                0x12323
-              </td>
-              <td>
-                计算机技术
-              </td>
-              <td>
-                48
-              </td>
-              <td>
-                主203
-              </td>
-            </tr>
+            <tbody >
+            <c:forEach var="course" items="${courses}">
+              <tr>
+                <td>
+                    ${course.id}
+                </td>
+                <td>
+                    ${course.name}
+                </td>
+                <td>
+                    ${course.time}
+                </td>
+                <td>
+                    ${course.classroom}
+                </td>
+                <td><form style="margin-bottom: 0em" method="post" action="/course/unchosen/add${course.id}"><button class="btn btn-success btn-xs" type="submit" >选课</button></form></td>
+              </tr>
+            </c:forEach>
             </tbody>
           </table>
         </div>

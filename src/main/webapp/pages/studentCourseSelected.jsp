@@ -67,11 +67,11 @@
               <th>
                 教室
               </th>
+              <th>退课</th>
             </tr>
             </thead>
             <tbody >
             <c:forEach var="course" items="${courses}">
-              <% int i=0; %>
             <tr>
               <td>
                 ${course.id}
@@ -80,11 +80,12 @@
                 ${course.name}
               </td>
               <td>
-                48
+                ${course.time}
               </td>
               <td>
-                主203
+                ${course.classroom}
               </td>
+              <td><form style="margin-bottom: 0em" method="post" action="/course/chosen/delete${course.id}"><button class="btn btn-success btn-xs" type="submit" >退课</button></form></td>
             </tr>
             </c:forEach>
             </tbody>

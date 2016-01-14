@@ -18,4 +18,7 @@ public class GradeService {
     public void deleteGrade(String id){
 
     }
+    public List<Grade> getStudentGrades(String id){
+        return null;
+    }
 }

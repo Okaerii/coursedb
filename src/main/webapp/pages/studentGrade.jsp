@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
   <!--UTF8声明-->
@@ -51,7 +52,7 @@
 
         </div>
         <div class="col-md-8">
-          <table class="table table-striped">
+          <table class="table table-striped table-condensed" >
             <thead>
             <tr>
               <th>
@@ -63,20 +64,22 @@
               <th>
                 成绩
               </th>
+
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <td>
-                0x12314
-              </td>
-              <td>
-                计算机组成原理
-              </td>
-              <td>
-                59
-              </td>
-            </tr>
+            <c:forEach var="grade" items="${grades}">
+              <tr>
+                <td>
+                    ${grade.course_id}
+                </td>
+                <td>
+                  ${grade.course_name}
+                </td>
+                <td>${grade.grades}</td>
+               </tr>
+            </c:forEach>
+
             </tbody>
           </table>
         </div>

@@ -18,4 +18,18 @@ public class CourserService {
     public void deleteCourse(String id){
 
     }
+    public List<Course> getStudentChosenCourse(String id){
+        return null;
+    }
+    public List<Course> getStudentUnchosenCourse(String id){
+        return null;
+    }
+
+    public boolean deleteStudentCourse(String studentid, String courseid) {
+        return false;
+    }
+
+    public boolean addStudentCourse(String studentid, String courseid) {
+        return false;
+    }
 }

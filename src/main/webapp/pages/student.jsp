@@ -51,7 +51,7 @@
 
         </div>
         <div class="col-md-8">
-          <table class="table table-striped">
+          <table class="table table-striped table-condensed" >
             <thead>
             <tr>
               <th>
@@ -61,40 +61,34 @@
                 姓名
               </th>
               <th>
-                性别
-              </th>
-              <th>
                 年龄
               </th>
               <th>
-               班级
+                性别
               </th>
-              <th>
-                院系
-              </th>
+              <th>班级</th>
+              <th>系</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <td>
-                13061109
-              </td>
-              <td>
-                谢晓立
-              </td>
-              <td>
-               男
-              </td>
-              <td>
-               XX
-              </td>
-              <th>
-                130614
-              </th>
-              <th>
-                计算机学院
-              </th>
-            </tr>
+              <tr>
+                <td>
+                    ${student.id}
+                </td>
+                <td>
+                    ${student.name}
+                </td>
+                <td>
+                    ${student.age}
+                </td>
+                <td>
+                    ${student.gender}
+                </td>
+                <td>
+                    ${student.classid.id}
+                </td>
+                <td>${student.classid.departmentid}</td>
+              </tr>
             </tbody>
           </table>
         </div>
