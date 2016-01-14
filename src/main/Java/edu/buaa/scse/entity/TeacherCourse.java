@@ -17,6 +17,11 @@ public class TeacherCourse implements Serializable {
     @Id //在表中的名称
     @GeneratedValue(strategy=GenerationType.AUTO) //自动增长
     private Integer id;
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public Integer getId(){
         return this.id;
     }
@@ -38,7 +43,7 @@ public class TeacherCourse implements Serializable {
 //    public void setCourse(Course course) {
 //        this.course = course;
 //    }
-    @Column(nullable = true,length = 1)
+    @Column(nullable = true)
     public String getLevel() {
         return level;
     }

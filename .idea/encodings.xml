@@ -18,6 +18,7 @@
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/DAO/TeacherDAO.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/DAO/TeacherDAOImpl.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/controller/MainController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/controller/ManagerController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/controller/StudentController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/controller/UserController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/entity/Class.java" charset="UTF-8" />
@@ -29,8 +30,11 @@
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/entity/Teacher.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/entity/TeacherCourse.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/entity/User.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/service/ClassService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/service/CourserService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/service/StudentService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/service/StudentServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/service/TeacherService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/service/UserService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/Java/edu/buaa/scse/service/UserServiceImpl.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/pages/index.jsp" charset="UTF-8" />

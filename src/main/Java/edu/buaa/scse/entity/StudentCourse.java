@@ -16,6 +16,11 @@ public class StudentCourse implements Serializable {
     @Id                                             //在表中的名称
     @GeneratedValue(strategy= GenerationType.AUTO) //自动增长
     private Integer id;
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public Integer getId(){
         return this.id;
     }
@@ -36,12 +41,12 @@ public class StudentCourse implements Serializable {
 //    public void setCourse(Course course) {
 //        this.course = course;
 //    }
-    @Column(nullable = true,length = 1)
+    @Column(nullable = true)
     public long getGrades() {
         return grades;
     }
 
-    public void setLevel(long grades) {
+    public void setGrades(long grades) {
         this.grades = grades;
     }
 }

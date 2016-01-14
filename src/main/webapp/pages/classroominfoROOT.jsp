@@ -99,7 +99,7 @@
             </c:forEach>
             <tr>
               <form action="/root/classroom/add" method="post">
-              <td><input type="text" name="id" class="form-control" required autofocus></td>
+              <td><input type="text" name="id1" class="form-control" required autofocus></td>
               <td><input type="text" name="location" class="form-control" required autofocus></td>
               <td><input type="number" name="size"class="form-control"></td>
               <td><button class="btn btn-success btn-xs" type="submit" >添加/修改</button></td>

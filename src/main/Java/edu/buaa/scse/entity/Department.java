@@ -25,7 +25,7 @@ public class Department {
         this.id = id;
     }
 
-    @Column(length = 20,nullable = false)
+    @Column(nullable = false)
     public String getName() {
         return name;
     }
@@ -33,7 +33,7 @@ public class Department {
     public void setName(String name) {
         this.name = name;
     }
-    @Column(length =  20,nullable = true)
+    @Column(nullable = true)
     public String getChairman() {
         return chairman;
     }
@@ -41,7 +41,7 @@ public class Department {
     public void setChairman(String chairman) {
         this.chairman = chairman;
     }
-    @Column(length = 11,nullable = true)
+    @Column(nullable = true)
     public String getPhonenum() {
         return phonenum;
     }

@@ -100,7 +100,7 @@
             </c:forEach>
             <tr>
               <form action="/root/teacher/evaluate/add" method="post">
-                <td><input type="text" name="id" class="form-control" ></td>
+                <td><input type="text" name="id1" class="form-control" disabled></td>
                 <td><input type="text" name="teacher_id" class="form-control" required autofocus></td>
                 <td><input type="text" name="course_id"class="form-control" required autofocus></td>
                 <td><input type="text" name="level"class="form-control" ></td>

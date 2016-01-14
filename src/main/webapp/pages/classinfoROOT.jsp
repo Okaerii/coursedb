@@ -91,14 +91,14 @@
                     ${class1.monitorid}
                 </td>
                 <td>
-                    ${class1.departmentid}
+                    ${class1.departmentid.id}
                 </td>
                 <td><form style="margin-bottom: 0em" method="post" action="/root/class/delete/${class1.id}"><button class="btn btn-success btn-xs" type="submit" >删除</button></form></td>
               </tr>
             </c:forEach>
             <tr>
               <form action="/root/class/add" method="post">
-                <td><input type="text" name="id" class="form-control" required autofocus></td>
+                <td><input type="text" name="id1" class="form-control" required autofocus></td>
                 <td><input type="text" name="monitorid" class="form-control"></td>
                 <td><input type="text" name="departmentid"class="form-control"></td>
                 <td><button class="btn btn-success btn-xs" type="submit" >添加/修改</button></td>

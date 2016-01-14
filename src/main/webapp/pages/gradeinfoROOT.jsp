@@ -95,12 +95,12 @@
                     ${grade.course_id}
                 </td>
                 <td>${grade.grades}</td>
-                <td><form style="margin-bottom: 0em" method="post" action="/root/teacher/grade/delete/${grade.id}"><button class="btn btn-success btn-xs" type="submit" >删除</button></form></td>
+                <td><form style="margin-bottom: 0em" method="post" action="/root/grade/delete/${grade.id}"><button class="btn btn-success btn-xs" type="submit" >删除</button></form></td>
               </tr>
             </c:forEach>
             <tr>
-              <form action="/root/teacher/grade/add" method="post">
-                <td><input type="text" name="id" class="form-control" ></td>
+              <form action="/root/grade/add" method="post">
+                <td><input type="text" name="id1" class="form-control" disabled ></td>
                 <td><input type="text" name="student_id" class="form-control" required autofocus></td>
                 <td><input type="text" name="course_id"class="form-control" required autofocus></td>
                 <td><input type="text" name="grade"class="form-control"  required autofocus></td>

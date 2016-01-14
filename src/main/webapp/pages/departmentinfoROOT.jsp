@@ -85,7 +85,7 @@
               </tr>
               </thead>
               <tbody>
-              <c:forEach var="department" items="${departmentes}">
+              <c:forEach var="department" items="${departments}">
                 <tr>
                   <td>
                       ${department.id}
@@ -104,10 +104,10 @@
               </c:forEach>
               <tr>
                 <form action="/root/department/add" method="post">
-                  <td><input type="text" name="id" class="form-control" required autofocus></td>
-                  <td><input type="text" name=name" class="form-control" required autofocus></td>
-                  <td><input type="number" name="chairman"class="form-control"></td>
-                  <td><input type="number" name="phonenum"class="form-control"></td>
+                  <td><input type="text" name="id1" class="form-control" required autofocus></td>
+                  <td><input type="text" name="name" class="form-control" required autofocus></td>
+                  <td><input type="text" name="chairman"class="form-control"></td>
+                  <td><input type="text" name="phonenum"class="form-control"></td>
                   <td><button class="btn btn-success btn-xs" type="submit" >添加/修改</button></td>
                 </form>
               </tr>

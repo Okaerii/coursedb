@@ -34,7 +34,7 @@ public class User {
         this.power = power;
     }
 
-    @Column(length = 10,nullable = false)
+    @Column(nullable = false)
     public String getPassword() {
         return password;
     }

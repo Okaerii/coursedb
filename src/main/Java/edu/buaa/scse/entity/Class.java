@@ -12,7 +12,7 @@ public class Class {
     private Department departmentid;
    private String  monitorid;
     @Id
-    @Column(length = 5,nullable = false,unique = true)
+    @Column(nullable = false,unique = true)
     public String getId(){
         return this.id;
     }
@@ -27,12 +27,16 @@ public class Class {
         this.departmentid = departmentid;
     }
 
-    @Column(length = 6,nullable = true)
+    @Column(nullable = true)
     public String getMonitorid(){
         return monitorid;
     }
 
     public void setMonitorid(String  monitorid){
         this.monitorid= monitorid;
+    }
+
+    public static void forName(String s) {
+
     }
 }

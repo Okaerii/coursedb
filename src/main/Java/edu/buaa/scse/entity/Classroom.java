@@ -15,7 +15,7 @@ public class Classroom {
     private int size;
     private  String location;
     @Id
-    @Column(length = 10 ,nullable = false , unique = true)
+    @Column(nullable = false , unique = true)
     public String getId() {
         return id;
     }
@@ -24,7 +24,7 @@ public class Classroom {
         this.id = id;
     }
 
-    @Column(length = 20,nullable = false)
+    @Column(nullable = false)
     public String getLocation(){
         return this.location;
     }

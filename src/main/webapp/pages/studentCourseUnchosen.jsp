@@ -82,9 +82,9 @@
                     ${course.time}
                 </td>
                 <td>
-                    ${course.classroom}
+                    ${course.classroom.id}
                 </td>
-                <td><form style="margin-bottom: 0em" method="post" action="/course/unchosen/add${course.id}"><button class="btn btn-success btn-xs" type="submit" >选课</button></form></td>
+                <td><form style="margin-bottom: 0em" method="post" action="/student/course/unchosen/add/${course.id}"><button class="btn btn-success btn-xs" type="submit" >选课</button></form></td>
               </tr>
             </c:forEach>
             </tbody>

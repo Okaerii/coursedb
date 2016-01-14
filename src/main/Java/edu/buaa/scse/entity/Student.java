@@ -22,21 +22,21 @@ public class Student implements Serializable{
     private Class classid;
     private List<Course> courses =new ArrayList<Course>();
     @Id
-    @Column(nullable = false,length = 5,unique = true)
+    @Column(nullable = false,unique = true)
    public String getId(){
        return this.id;
    }
     public  void setId(String id){
         this.id = id;
     }
-    @Column(length = 20 ,nullable = false)
+    @Column(nullable = false)
     public String getName(){
         return this.name;
     }
     public void setName(String name){
         this.name = name;
     }
-    @Column(length = 1,nullable = false)
+    @Column(nullable = false)
     @Pattern(regexp = "[fm]{1}")
     public String getGender() {
         return this.gender;

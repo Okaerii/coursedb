@@ -112,7 +112,7 @@
             </c:forEach>
             <tr>
               <form action="/root/teacher/add" method="post">
-                <td><input type="text" name="id" class="form-control" required autofocus></td>
+                <td><input type="text" name="id1" class="form-control" required autofocus></td>
                 <td><input type="text" name="name"class="form-control" required autofocus></td>
                 <td><input type="number" name="age"class="form-control" required autofocus></td>
                 <td><input type="text" name="gender"class="form-control" required autofocus></td>

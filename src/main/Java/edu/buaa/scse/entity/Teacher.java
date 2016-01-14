@@ -24,7 +24,7 @@ public class Teacher implements Serializable {
 
 
     @Id
-    @Column(length = 5,nullable = false,unique = true)
+    @Column(nullable = false,unique = true)
     public String getId() {
         return id;
     }
@@ -34,7 +34,7 @@ public class Teacher implements Serializable {
         this.id = id;
     }
 
-    @Column(length = 5,nullable = false)
+    @Column(nullable = false)
     public String getName() {
         return name;
     }
@@ -43,7 +43,7 @@ public class Teacher implements Serializable {
         this.name = name;
     }
 
-    @Column(length = 1,nullable = false)
+    @Column(nullable = false)
     @Pattern(regexp = "[fm]{1}")
     public String getGender() {
         return gender;
@@ -60,7 +60,7 @@ public class Teacher implements Serializable {
     public void setAge(long age) {
         this.age = age;
     }
-    @Column(length = 20)
+    @Column
     public String getTitle() {
         return title;
     }
@@ -68,7 +68,7 @@ public class Teacher implements Serializable {
     public void setTitle(String title) {
         this.title = title;
     }
-    @Column(length = 11)
+    @Column
     public String getPhonenum() {
         return phonenum;
     }

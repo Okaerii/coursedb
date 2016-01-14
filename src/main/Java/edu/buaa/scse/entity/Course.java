@@ -19,7 +19,7 @@ public class Course implements Serializable{
     private List<Teacher> teachers;
     private List<Student> students;
     @Id
-    @Column(length = 4,nullable = false,unique = true)
+    @Column(nullable = false,unique = true)
     public String getId() {
         return id;
     }
@@ -27,7 +27,7 @@ public class Course implements Serializable{
     public void setId(String id) {
         this.id = id;
     }
-    @Column(length = 20,nullable = false)
+    @Column(nullable = false)
     public String getName() {
         return name;
     }

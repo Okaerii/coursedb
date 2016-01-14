@@ -77,7 +77,7 @@
                 课时
               </th>
               <th>
-                任课老师
+               教师号
               </th>
               <th>教室</th>
               <th>
@@ -101,17 +101,17 @@
                     ${course.teachers}
                 </td>
                 <td>
-                    ${course.classroom}
+                    ${course.classroom.id}
                 </td>
                 <td><form style="margin-bottom: 0em" method="post" action="/root/course/delete/${course.id}"><button class="btn btn-success btn-xs" type="submit" >删除</button></form></td>
               </tr>
             </c:forEach>
             <tr>
               <form action="/root/course/add" method="post">
-                <td><input type="text" name="id" class="form-control" required autofocus></td>
+                <td><input type="text" name="id1" class="form-control" required autofocus></td>
                 <td><input type="text" name="name"class="form-control" required autofocus></td>
                 <td><input type="number" name="time" class="form-control"></td>
-                <td><input type="text" name="teacher" class="form-control"></td>
+                <td><input type="text" name="teacherid" class="form-control"></td>
                 <td><input type="text" name="classroom"class="form-control"></td>
                 <td><button class="btn btn-success btn-xs" type="submit" >添加/修改</button></td>
               </form>

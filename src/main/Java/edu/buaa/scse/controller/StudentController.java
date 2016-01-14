@@ -46,11 +46,11 @@ public class StudentController {
         modelAndView.setViewName("studentCourseSelected");
         return modelAndView;
     }
-    @RequestMapping("/course/chosen/delete/{id}")
-    public ModelAndView studentCourseChosenDelete(@ModelAttribute("userObj") User u,@PathVariable("id") String id){
+    @RequestMapping("/course/chosen/delete/{id1}")
+    public ModelAndView studentCourseChosenDelete(@ModelAttribute("userObj") User u,@PathVariable("id1") String id){
         String uid = u.getId();
         studentService.deleteStudentCourse(uid, id);
-        List<Course> courses = studentService.getStudentChosenCourse(id);
+        List<Course> courses = studentService.getStudentChosenCourse(uid);
         ModelAndView modelAndView =new ModelAndView();
         modelAndView.addObject("courses",courses);
         modelAndView.setViewName("studentCourseSelected");
@@ -69,18 +69,18 @@ public class StudentController {
     @RequestMapping("/course/unchosen")
     public ModelAndView studentCourseUnchosen(@ModelAttribute("userObj") User u){
         String id = u.getId();
-        List<Course> courses = studentService.getStudentChosenCourse(id);
+        List<Course> courses = studentService.getStudentUnchosenCourse(id);
         ModelAndView modelAndView =new ModelAndView();
         modelAndView.addObject("courses", courses);
         modelAndView.setViewName("studentCourseUnchosen");
         return modelAndView;
     }
 
-    @RequestMapping("/course/unchosen/add/{id}")
-    public ModelAndView studentCourseUnchosenAdd(@ModelAttribute("userObj") User u,@PathVariable("id") String id){
+    @RequestMapping("/course/unchosen/add/{id1}")
+    public ModelAndView studentCourseUnchosenAdd(@ModelAttribute("userObj") User u,@PathVariable("id1") String id){
         String uid = u.getId();
         studentService.addStudentCourse(uid,id);
-        List<Course> courses = studentService.getStudentChosenCourse(id);
+        List<Course> courses = studentService.getStudentUnchosenCourse(uid);
         ModelAndView modelAndView =new ModelAndView();
         modelAndView.addObject("courses",courses);
         modelAndView.setViewName("studentCourseUnchosen");
